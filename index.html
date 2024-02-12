@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Message</title>
+    <style>
+        /* CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .header {
+            background: linear-gradient(to right, #01ae74, #007bff);
+            padding: 20px;
+            border: 10px ridge #ff6f61;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .headline {
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 36px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1s ease-in-out;
+            overflow: hidden;
+            /* Clear float */
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .message {
+            padding: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #333;
+            font-size: 16px;
+            font-style: italic;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #007bff;
+        }
+
+        .photo {
+            float: left;
+            /* Align photo to the left */
+            margin: 20px 20px 20px 0;
+            /* Margin to separate from text */
+            max-width: 30%;
+            /* Adjusted photo size */
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1s ease-in-out;
+            /* Removed rotate animation */
+            transition: transform 0.3s ease;
+            /* Added transition */
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="headline">
+            <h1>Thank You, Mamta Ma'am</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <img class="photo" src="Photo1.jpg" alt="Maths Teacher" />
+        <img class="photo" src="Photo2.jpg" alt="Maths Teacher 2" />
+        <img class="photo" src="Photo3.jpg" alt="Maths Teacher 3" />
+        <div class="message">
+            <h2>
+                <p>Dear Mamta Ma'am,</p>
+                <p>I want to express my heartfelt gratitude for being such an exceptional math teacher. Your dedication
+                    and passion for teaching have made a profound impact on my understanding of mathematics. Throughout
+                    this journey, you have been incredibly supportive, always willing to lend a helping hand whenever I
+                    needed it.</p>
+                <p>Although I regret not meeting your expectations in representing our school at a higher level in the
+                    Metal Maths competition, I am truly grateful for the knowledge and guidance you have imparted to me.
+                    Your clarity in explaining concepts and your friendly demeanor have made learning an enjoyable
+                    experience.</p>
+                <p>Thank you for everything, Mamta Ma'am. You have not only enriched my academic journey but also
+                    inspired me to strive for excellence in all aspects of life.</p>
+                <p>With deepest appreciation,</p>
+                <p>Sachin</p> <!-- Changed name to "Sachin" -->
+            </h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
